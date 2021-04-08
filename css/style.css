@@ -5,9 +5,9 @@
 }
 
 .body-wrap{
-  height: 100vh;
   width: 100%;
   background-color: #1E2D3B;
+  font-family: 'Lato', sans-serif;
 }
 
 .head{
@@ -20,8 +20,10 @@
 }
 
 .album-list{
-  margin: 50px;
+  padding: 50px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .album-list li{
@@ -30,6 +32,7 @@
   text-align: center;
   list-style: none;
   background-color:  #2E3A46;
+  max-width: 200px;
 }
 
 .cover-img{

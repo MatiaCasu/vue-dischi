@@ -9,21 +9,12 @@ const app = new Vue ({
   el: "#app",
   data: {
     prova: "ciao",
-    albumList: [
-      {
-      poster:"https:\/\/www.onstageweb.com\/wp-content\/uploads\/2018\/09\/bon-jovi-new-jersey.jpg",
-      title:"New Jersey",
-      author:"Bon Jovi",
-      genre:"Rock",
-      year:"1988"
-      },
-      {
-      poster:"https:\/\/www.onstageweb.com\/wp-content\/uploads\/2018\/09\/bon-jovi-new-jersey.jpg",
-      title:"New Jersey",
-      author:"Bon Jovi",
-      genre:"Rock",
-      year:"1988"
-      },
-    ]
+    albumList: ""
+  },
+  mounted: function(){
+    axios.get("https://flynn.boolean.careers/exercises/api/array/music")
+    .then( (response) =>{
+        this.albumList = response.data.response;
+    });
   }
 });
