@@ -1,0 +1,46 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body-wrap{
+  height: 100vh;
+  width: 100%;
+  background-color: #1E2D3B;
+}
+
+.head{
+  background-color:  #2E3A46;
+}
+
+.head img{
+  height: 40px;
+  margin: 5px 10px;
+}
+
+.album-list{
+  margin: 50px;
+  display: flex;
+}
+
+.album-list li{
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  list-style: none;
+  background-color:  #2E3A46;
+}
+
+.cover-img{
+  height: 150px;
+}
+
+.album-list li h2{
+  margin: 10px 0;
+  color: #fff;
+}
+
+.album-list li h4{
+  color: #7d7d7d;
+}
